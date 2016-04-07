@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<p>Tag:<input type="text" id="textbox" name="tag"></p>
+	<div id="result"></div>
+	<textarea id="txt" placeholder="tell me ur hobbies and press , to split them"></textarea>
+	<button>comfirm</button>
+	<div id="hobbies"></div>
+	<style type="text/css">
+		#hobbies,#result{
+			width: 600px;
+			height: 150px;
+			border: 1px solid black;
+			margin-bottom: 20px;
+		}
+		#hobbies li,#result li{
+			padding:5px;
+			list-style: none;
+			margin: 10px;
+			height: 30px;
+			line-height: 30px;
+			min-width: 30px;
+			display: inline-block;
+			text-align: center;
+			background-color: #659FFD;
+			color: #FFFFFF;
+		}
+		#result li:hover:before{
+			content: "删除";
+		}
+		#txt{
+			width: 600px;
+			height: 150px;
+		}
+		button{
+			display: block;
+			width: 100px;
+			height: 30px;
+			background-color: #7D97FC;
+			color: white; 
+			border: 1px solid #7D97FC;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript" src="task21.js"></script>
+</body>
+</html>
